@@ -1,0 +1,47 @@
+@import "mixins";
+@import "variables";
+
+#header {
+  background-color: $bg-black;
+  .custom_logo {
+    width: 90px;
+    height: 90px;
+    border: 2px solid $bg-black;
+    border-radius: 50%;
+    transition: all .3s linear;
+    &:hover {
+      border: 2px solid $bg-yellow;
+    }
+  }
+
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  #main-nav-menu {
+    li {
+      padding: 15px 0;
+      a {
+        color: $white;
+        border: 1px solid transparent;
+        padding: 10px 15px;
+        margin: 0 3px;
+        transition: all .3s linear;
+        &:hover {
+          border: 1px solid $bg-yellow;
+          text-decoration: none;
+        }
+      }
+    }
+    .current-menu-item a {
+      border: 1px solid $bg-yellow;
+    }
+  }
+  button {
+    color: $bg-yellow;
+    outline: none;
+    transition: all .3s linear;
+    &:hover {
+      border: 1px solid $bg-yellow;
+    }
+  }
+}

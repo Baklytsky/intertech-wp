@@ -1,0 +1,10 @@
+@import "mixins";
+@import "variables";
+
+#page-error {
+  background-color: $bg-black;
+  h1  {
+    color: $white;
+    padding: 200px 0;
+  }
+}
